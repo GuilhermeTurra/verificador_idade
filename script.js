@@ -17,31 +17,31 @@ function verificar() {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA
-                img.setAttribute('src', 'bebe-m.png')
+                img.setAttribute('src', 'imagens/bebe-m.png')
             } else if (idade < 21) {
                 //JOVEM
-                img.setAttribute('src', 'jovem-m.png')
+                img.setAttribute('src', 'imagens/jovem-m.png')
             } else if (idade < 50) {
                 //ADULTO
-                img.setAttribute('src', 'adulto-m.png')
+                img.setAttribute('src', 'imagens/adulto-m.png')
             } else {
                 //IDOSO
-                img.setAttribute('src', 'idoso-m.png')
+                img.setAttribute('src', 'imagens/idoso-m.png')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA
-                img.setAttribute('src', 'bebe-f.png')
+                img.setAttribute('src', 'imagens/bebe-f.png')
             } else if (idade < 21) {
                 //JOVEM
-                img.setAttribute('src', 'jovem-f.png')
+                img.setAttribute('src', 'imagens/jovem-f.png')
             } else if (idade < 50) {
                 //ADULTO
-                img.setAttribute('src', 'adulta-f.png')
+                img.setAttribute('src', 'imagens/adulta-f.png')
             } else {
                 //IDOSO
-                img.setAttribute('src', 'idosa-f.png')
+                img.setAttribute('src', 'imagens/idosa-f.png')
             }
         }
         res.innerHTML = `Detectamos ${genero} com idade ${idade} anos.`
